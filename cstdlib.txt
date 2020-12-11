@@ -1,0 +1,90 @@
+assert.h
+ctype.h
+errno.h
+float.h
+limits.h
+locale.h
+math.h
+setjmp.h
+signal.h
+stdarg.h
+stddef.h
+stdio.h
+stdlib.h
+string.h
+
+assert.h
+
+	- void assert(int expression);
+
+	The assert macro puts diagnostics into programs, if an expression returns false, the
+		assert macro writes information about the call that failed, including the text
+		of the argument, name of the source file, and the source line number
+
+ctype.h
+
+Character testing functions
+
+	- int isalnum(int c);
+	- int isalpha(int c);
+	- int iscntrl(int c);
+	- int isdigit(int c);
+	- int isgraph(int c);
+	- int islower(int c);
+	- int isprint(int c);
+	- int ispunct(int c);
+	- int isspace(int c);
+	- int isupper(int c);
+	- int isxdigit(int c);
+	- int tolower(int c);
+	- int toupper(int c);
+
+errno.h
+
+	errno.h defines several macros related to identifying syscall errors, function errors
+	Reports on failed functions, syscalls via the EDOM, ERANGE preprocessor directives
+
+float.h
+
+	describes a representation of floating-point numbers and their arithmetic
+
+	With floating-point arithmetic, issues such as machine-language operations, precision
+	of digits, overflow, underflow, machine-level representation are partially remediated
+	by float.h. It includes a number of constants/macros
+
+
+
+
+
+limits.h
+locale.h
+
+
+	char * decimal_point;
+	char * thousands_sep;
+	char * grouping;
+	...
+
+	LC_ALL
+	LC_COLLATE
+	LC_CTYPE
+	LC_MONETARY
+	LC_NUMERIC
+	LC_TIME
+
+
+	char * setlocale(int category, const char * locale);
+
+	struct lconv * localeconv(void);
+
+	char * _Fmtval(char * buf, double val, int frac_digits);
+
+math.h
+setjmp.h
+signal.h
+stdarg.h
+stddef.h
+stdio.h
+stdlib.h
+string.h
+
