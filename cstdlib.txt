@@ -1,3 +1,11 @@
+
+C Standard Library
+
+Note-taking from Plauger, "The Standard C Library"
+
+Charles Thomas Wallace Truscott, github.com/r0ss1n1
+
+
 assert.h
 ctype.h
 errno.h
@@ -12,6 +20,10 @@ stddef.h
 stdio.h
 stdlib.h
 string.h
+
+
+
+
 
 assert.h
 
@@ -57,6 +69,26 @@ float.h
 
 
 limits.h
+
+	Constants for machine-level representation of data types, e.g. for use in #if, #ifdef preprocessing directives
+
+	CHAR_BIT
+	SCHAR_MIN
+	SCHAR_MAX
+	UCHAR_MAX
+	CHAR_MIN
+	CHAR_MAX
+	MB_LEN_MAX
+	SHRT_MIN
+	SHRT_MAX
+	USHRT_MAX
+	INT_MIN
+	INT_MAX
+	UINT_MAX
+	LONG_MIN
+	LONG_MAX
+	ULONG_MAX
+
 locale.h
 
 
@@ -80,6 +112,30 @@ locale.h
 	char * _Fmtval(char * buf, double val, int frac_digits);
 
 math.h
+
+	double acos(double x);
+	double asin(double x);
+	double atan(double x);
+	double atan2(double x, double y);
+	double cos(double x);
+	double sin(double x);
+	double tan(double x);
+	double cosh(double x);
+	double sinh(double x);
+	double tanh(double x);
+	double exp(double x);
+	double frexp(double value, int * exp);
+	double ldexp(double x, int exp);
+	double log(double x);
+	double log10(double x);
+	double modf(double value, double * iptr);
+	double pow(double x, double y);
+	double sqrt(double x);
+	double ceil(double x);
+	double fabs(double x);
+	double floor(double x);
+	double fmod(double x, double y);
+	
 setjmp.h
 signal.h
 stdarg.h
